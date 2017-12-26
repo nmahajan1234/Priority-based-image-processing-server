@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8)
+project( GreyScaleS )
+find_package( OpenCV 3.3.1 )
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+add_executable( server server.cpp )
+target_link_libraries( server ${OpenCV_LIBS} )
+target_link_libraries( server Threads::Threads)

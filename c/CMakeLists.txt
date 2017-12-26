@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( GreyScale )
+find_package( OpenCV 3.3.1 )
+add_executable( client client.cpp )
+target_link_libraries( client ${OpenCV_LIBS} )

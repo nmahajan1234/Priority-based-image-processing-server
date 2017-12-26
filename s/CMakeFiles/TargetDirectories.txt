@@ -1,0 +1,3 @@
+/home/nayan/eos/Client-Server/s/CMakeFiles/edit_cache.dir
+/home/nayan/eos/Client-Server/s/CMakeFiles/rebuild_cache.dir
+/home/nayan/eos/Client-Server/s/CMakeFiles/server.dir
