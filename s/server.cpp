@@ -266,7 +266,7 @@ void *master_thread(void *q){
 	queue *fifo;
 	fifo=(queue *)q;
 	while(  fd = accept(listen_fd, (struct sockaddr*) NULL, NULL)){
-
+		pthread_mutex_lock (fifo->mut);
 		printf("master_thread: Connection accepted fd:%d \n",fd);
 		while(fifo->full){
 			printf("master_thread: queue FULL. \n");
